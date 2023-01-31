@@ -33,7 +33,7 @@ DHS_tfr2<-DHS_tfr2[!(DHS_tfr2$TFR>20),]
 
 DHS_tfr2<-DHS_tfr2[!(DHS_tfr2$`Survey Year`==2007 & DHS_tfr2$Country=="Tanzania"),]
 
-DHS_tfr2<-DHS_tfr2[!(DHS_tfr2$`Survey Year`==2005 & DHS_tfr2$Country=="C魌e D'Ivoire"),]
+DHS_tfr2<-DHS_tfr2[!(DHS_tfr2$`Survey Year`==2005 & DHS_tfr2$Country=="C么te D'Ivoire"),]
 
 DHS_tfr2<-DHS_tfr2[!(DHS_tfr2$`Survey Year`%in%c(2007,2013) & DHS_tfr2$Country=="Dominican Republic"),]
 
@@ -105,7 +105,7 @@ DHS_tfr_5_2<-DHS_tfr_5_2[!(DHS_tfr_5_2$TFR<2 & DHS_tfr_5_2$Region=="Africa"),]
 #Delete data for Survey years which results do not make sense
 
 DHS_tfr_5_2<-DHS_tfr_5_2[!(DHS_tfr_5_2$`Survey Year`==2007 & DHS_tfr_5_2$Country=="Tanzania"),]
-DHS_tfr_5_2<-DHS_tfr_5_2[!(DHS_tfr_5_2$`Survey Year`==2005 & DHS_tfr_5_2$Country=="C魌e D'Ivoire"),]
+DHS_tfr_5_2<-DHS_tfr_5_2[!(DHS_tfr_5_2$`Survey Year`==2005 & DHS_tfr_5_2$Country=="C么te D'Ivoire"),]
 DHS_tfr_5_2<-DHS_tfr_5_2[!(DHS_tfr_5_2$`Survey Year`%in%c(2007,2013) & DHS_tfr_5_2$Country=="Dominican Republic"),]
 DHS_tfr_5_2<-DHS_tfr_5_2[!(DHS_tfr_5_2$Year=="1970-1975" & DHS_tfr_5_2$Country=="Cambodia"),]
 
@@ -152,7 +152,7 @@ DHS_estfr$`Survey Year`<-as.factor(DHS_estfr$`Survey Year`)
 
 DHS_estfr<-DHS_estfr[!(DHS_estfr$`Survey Year`==2007 & DHS_estfr$Country=="Tanzania"),]
 
-DHS_estfr<-DHS_estfr[!(DHS_estfr$`Survey Year`==2005 & DHS_estfr$Country=="C魌e D'Ivoire"),]
+DHS_estfr<-DHS_estfr[!(DHS_estfr$`Survey Year`==2005 & DHS_estfr$Country=="C么te D'Ivoire"),]
 
 
 #Delete already the values close to 0 and values above 25  
@@ -312,7 +312,7 @@ DHS_estfr_5<-DHS_estfr_5[!(DHS_estfr_5$TFR<2 & DHS_estfr_5$Region=="Africa"),]
 
 DHS_estfr_5<-DHS_estfr_5[!(DHS_estfr_5$`Survey Year`==1996 & DHS_estfr_5$Country=="Chad"),]
 DHS_estfr_5<-DHS_estfr_5[!(DHS_estfr_5$`Survey Year`==2007 & DHS_estfr_5$Country=="Tanzania"),]
-DHS_estfr_5<-DHS_estfr_5[!(DHS_estfr_5$`Survey Year`==2005 & DHS_estfr_5$Country=="C魌e D'Ivoire"),]
+DHS_estfr_5<-DHS_estfr_5[!(DHS_estfr_5$`Survey Year`==2005 & DHS_estfr_5$Country=="C么te D'Ivoire"),]
 
 #Delete already the values close to 0 and values above 25  
 DHS_estfr_5<-DHS_estfr_5[!(DHS_estfr_5$TFR>12),]
@@ -456,7 +456,7 @@ DHS_estfr_5_2<-DHS_estfr_5_2[!(DHS_estfr_5_2$TFR>5.2& DHS_estfr_5_2$Country=="Bu
 DHS_estfr_5_2<-DHS_estfr_5_2[!(DHS_estfr_5_2$TFR>5.5& DHS_estfr_5_2$Country=="Cameroon" & DHS_estfr_5_2$Education=="Higher Education"),]
 DHS_estfr_5_2<-DHS_estfr_5_2[!(DHS_estfr_5_2$TFR>5& DHS_estfr_5_2$Country%in%c("Dominican Republic","Ethiopia","Gabon","Liberia","Maldives","Uganda","Guatemala") &
                                  DHS_estfr_5_2$Education=="Higher Education"),]
-DHS_estfr_5_2<-DHS_estfr_5_2[!(DHS_estfr_5_2$`Survey Year`==1998 & DHS_estfr_5_2$Country=="C魌e D'Ivoire" & DHS_estfr_5_2$Education=="Higher Education"),]
+DHS_estfr_5_2<-DHS_estfr_5_2[!(DHS_estfr_5_2$`Survey Year`==1998 & DHS_estfr_5_2$Country=="C么te D'Ivoire" & DHS_estfr_5_2$Education=="Higher Education"),]
 DHS_estfr_5_2<-DHS_estfr_5_2[!(DHS_estfr_5_2$`Survey Year`==2012 & DHS_estfr_5_2$Country=="Guniea" & DHS_estfr_5_2$Education=="Higher Education"),]
 DHS_estfr_5_2<-DHS_estfr_5_2[!(DHS_estfr_5_2$`Survey Year`==1999 & DHS_estfr_5_2$Year=="1970-1975"  &
                                  DHS_estfr_5_2$Country=="Guniea" & DHS_estfr_5_2$Education=="Higher Education"),]
@@ -551,7 +551,7 @@ DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$ASFR>0.3 & DHS_asfr2$Country=="South Africa"),]
 DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$ASFR>0.45 & DHS_asfr2$Country=="Namibia"),]
 DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$ASFR>0.41 & DHS_asfr2$Country=="Sudan"),]
 DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$ASFR>0.5 & DHS_asfr2$Country=="Egypt"),]
-DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$`Survey Year`==2005 & DHS_asfr2$Country=="C魌e D'Ivoire"),]
+DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$`Survey Year`==2005 & DHS_asfr2$Country=="C么te D'Ivoire"),]
 DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$`Survey Year`==2011 & DHS_asfr2$Year==2005 & DHS_asfr2$Country=="Madagascar"),]
 DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$`Survey Year`==2013 & DHS_asfr2$Year==2007 & DHS_asfr2$Country=="Madagascar"),]
 DHS_asfr2<-DHS_asfr2[!(DHS_asfr2$ASFR<0.1 & DHS_asfr2$Age==26 & DHS_asfr2$Year==2015 & DHS_asfr2$Country=="Rwanda"),]
@@ -642,7 +642,7 @@ DHS_asfr_5<-DHS_asfr_5[!(is.na(DHS_asfr_5$`Survey Year`)),]
 
 DHS_asfr_5$`Survey Year`<-as.factor(DHS_asfr_5$`Survey Year`)
 
-DHS_asfr_5<-DHS_asfr_5[!(DHS_asfr_5$`Survey Year`==2005 & DHS_asfr_5$Country=="C魌e D'Ivoire"),]
+DHS_asfr_5<-DHS_asfr_5[!(DHS_asfr_5$`Survey Year`==2005 & DHS_asfr_5$Country=="C么te D'Ivoire"),]
 DHS_asfr_5<-DHS_asfr_5[!(DHS_asfr_5$`Survey Year`==2005 & DHS_asfr_5$Country=="Vietnam"),]
 DHS_asfr_5<-DHS_asfr_5[!(DHS_asfr_5$`Survey Year`==2012 & DHS_asfr_5$Year=="2000-2005" & DHS_asfr_5$Country=="Burundi"),]
 DHS_asfr_5<-DHS_asfr_5[!(DHS_asfr_5$`Survey Year`==2013 & DHS_asfr_5$Year=="2005-2010"& DHS_asfr_5$Country=="Rwanda"),]
@@ -854,7 +854,7 @@ DHS_esasfr_5_2<-DHS_esasfr_5_2[!(DHS_esasfr_5_2$ASFR<0.05 & DHS_esasfr_5_2$Age<4
 
 ##Based off on the graph make the following changes
 
-DHS_esasfr_5_2<-DHS_esasfr_5_2[!(DHS_esasfr_5_2$`Survey Year`==2005 & DHS_esasfr_5_2$Country=="C魌e D'Ivoire"),]
+DHS_esasfr_5_2<-DHS_esasfr_5_2[!(DHS_esasfr_5_2$`Survey Year`==2005 & DHS_esasfr_5_2$Country=="C么te D'Ivoire"),]
 DHS_esasfr_5_2<-DHS_esasfr_5_2[!(DHS_esasfr_5_2$`Survey Year`==2005 & DHS_esasfr_5_2$Country=="Vietnam"),]
 
 DHS_esasfr_5_2<-DHS_esasfr_5_2[!(DHS_esasfr_5_2$`Survey Year`==2012 & DHS_esasfr_5_2$Year=="2000-2005" & DHS_esasfr_5_2$Country=="Burundi"),]
